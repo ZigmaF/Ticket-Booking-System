@@ -26,7 +26,7 @@ contract Ticket is ERC721Burnable, Ownable{
     }
 
     // constructor with start time of event and poster gets created 
-    constructor(string memory name, string memory symbol, uint256 _startTime) ERC721(name, symbol) {
+    constructor(string memory name, string memory symbol, uint64 _startTime) ERC721(name, symbol) {
         //setup counter to start at 1 to avoid cluttering the 0th seat ownership
         //_tokenIds.increment(); 
         startTime = _startTime;
